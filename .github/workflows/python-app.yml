@@ -1,0 +1,27 @@
+stack = []
+
+def push(item):
+    stack.append(item)
+
+def pop():
+    if len(stack) == 0:
+        return None
+    else:
+        return stack.pop()
+push(10)
+push(20)
+push(30)
+
+popped_item = pop()
+print("Popped item:", popped_item)
+
+push(40)
+
+popped_item = pop()
+print("Popped item:", popped_item)
+
+popped_item = pop()
+print("Popped item:", popped_item)
+
+popped_item = pop()
+print("Popped item:", popped_item)
